@@ -11,12 +11,12 @@
   ------------------
 3. string, float, variable
   ------------------
-4. expressions are made of values and operators that evaluate to a value
+4. Expressions are made of values and operators that evaluate to a value.
   ------------------
-5. statement assigns value to a variable. expression modifies values.
+5. Statement assigns value to a variable. expression modifies values.
   ------------------
 6. bacon = 21
   ------------------
-7. both evaluate to spamspamspam
+7. Both evaluate to spamspamspam.
   ------------------
 8. 100 already has the built-in value of 100, so cannot be a variable name.
