@@ -1,9 +1,9 @@
 1. What are the two values of the Boolean data type? How do you write them? 
 A: True and False, with capital F and T
-
+------------------------------------------------------------------------------------
 2. What are the three Boolean operators?
 A: and, or, not
-
+------------------------------------------------------------------------------------
 3. Write out the truth tables of each Boolean operator 
   A: 
   True and False = False
@@ -19,16 +19,16 @@ A: and, or, not
   not True = False
   not False = True
   
-  
+------------------------------------------------------------------------------------
 4. What do the following expressions evaluate to?
 
-(5 > 4) and (3 == 5) A:False 
-not (5 > 4) A:False
-(5 > 4) or (3 == 5) A:True 
-not ((5 > 4) or (3 == 5)) A:False 
-(True and True) and (True == False) A:False 
-(not False) or (not True) A:True
-
+(5 > 4) and (3 == 5) A: False 
+not (5 > 4) A: False
+(5 > 4) or (3 == 5) A: True 
+not ((5 > 4) or (3 == 5)) A: False 
+(True and True) and (True == False) A: False 
+(not False) or (not True) A: True
+------------------------------------------------------------------------------------
 5. What are the six comparison operators? 
   A: 
   ==
@@ -37,18 +37,17 @@ not ((5 > 4) or (3 == 5)) A:False
   <
   <=
   >=
-
+------------------------------------------------------------------------------------
 6. What is the difference between the equal to operator and the assignment operator? 
    A:
     == compares two values and returns true if they are the same
     = assigns a value to a variable
-
-
+------------------------------------------------------------------------------------
 7. Explain what a condition is and where you would use one.
   A:
   A condition is an expression that evaluates to a boolean value.
   You would use a condition in a flow control statement to decide what to do based on whether a condition is True or False
-
+------------------------------------------------------------------------------------
 8. Identify the three blocks in this code:
 spam = 0 
 if spam == 10:    
@@ -59,9 +58,10 @@ if spam == 10:
     print('ham') <------ third block
   print('spam') 
 print('spam')
-
+------------------------------------------------------------------------------------
 9. Write code that prints Hello if 1 is stored in spam, prints 
 Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam. 
+
 A:
 print('Press 1 or 2 or whatever')
 spam = input()
@@ -71,10 +71,33 @@ elif spam == '2':
     print('Howdy')
 else:
     print('Greetings')
-
+------------------------------------------------------------------------------------
 10. What can you press if your program is stuck in an infinite loop? 
 A: Control + C
+------------------------------------------------------------------------------------
+11. What is the difference between break and continue?
+A: A break statement causes a program to jump out of a loop early and go to the next line of code below it
+   A continue statement causes a program to go back to the start of a loop and reevaluate its condition.
+------------------------------------------------------------------------------------
+12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop? 
+A: The only difference is that range(0, 10) and range(0, 10, 1) are showing 
+   the default values for the other arguments that can be used when range(10) is called. 
+------------------------------------------------------------------------------------   
+13. Write a short program that prints the numbers 1 to 10 using a for loop. 
+Then write an equivalent program that prints the numbers 1 to 10 using a while loop. 
+A: 
+With for loop:
 
+for p in range(1, 11):
+    print(p)
 
+With while loop:
 
-
+i = 0
+while i < 10:
+    i += 1
+    print(i)
+------------------------------------------------------------------------------------
+14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+A: spam.bacon()
+------------------------------------------------------------------------------------
