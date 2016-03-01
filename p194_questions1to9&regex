@@ -46,3 +46,23 @@ as a list of string values, one string for each line of text
 9. What data structure does a shelf value resemble?
 
 A: A dictionary
+
+------------------------------------
+Regex searcher:
+
+import re
+import os
+path = os.getcwd()
+def regexSagashi(directory, regex):
+    for filename in os.walk(directory):
+        if os.path.isfile(os.path.join(directory, filename)):
+            thatFile = open(os.path.join(directory, filename))
+            fileContents = thatFile.readlines()
+
+            for i in range(len(fileContents)):
+                            line = fileContents[i]
+                            if re.match(regex, line):
+                                print('Found match in ' + str(filename) +
+                                      ' in line: ' + str(i + 1))
+                        
+                        
